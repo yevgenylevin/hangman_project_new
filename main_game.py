@@ -1,0 +1,38 @@
+import random
+
+from google.api_core.retry import retry_target_stream
+
+print("Welcome to the Hangman game!")
+
+list_of_words = [
+    "banana",
+    "monkey",
+    "zoom",
+    "cat",
+    "dog",
+    "avocado",
+    "epic",
+    "melon",
+    "tomato"
+]
+
+def choose_a_random_word(word_list: list):
+    len_of_list = len(word_list)
+    random_index = random.randint(a=0, b=len_of_list - 1)
+    return word_list[random_index]
+
+
+def print_hidden_word(word):
+    ...
+
+
+if הכל בסדר:
+    return את האות
+else:
+    return False
+
+
+if __name__ == '__main__':
+    # print(choose_a_random_word(list_of_words))
+    word = "asdasd"
+    print(word.isalpha())
